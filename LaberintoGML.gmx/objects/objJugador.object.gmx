@@ -32,6 +32,8 @@ llaveDorada = false;
 llaveRoja = false;
 llavePlateada = false;
 llaveNegra = false;
+
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -56,6 +58,7 @@ llaveNegra = false;
             <kind>1</kind>
             <string>/// Moviento del jugador
 
+/*
 if (keyboard_check(vk_left))
     {
     if (!place_meeting(x-velocidad,y,objMuro))&amp;&amp;(!place_meeting(x-velocidad,y,objPuertaPadre))
@@ -79,6 +82,83 @@ if (keyboard_check(vk_down))
     if (!place_meeting(x,y+velocidad,objMuro))&amp;&amp;(!place_meeting(x,y+velocidad,objMuro))
     {y = y+velocidad;}
     }
+*/    
+    
+// Snapped moving chapter
+
+//speed = 0;
+    
+//  Movimiento a la derecha, velocidad 4 en dirección 0.
+if (keyboard_check(vk_right))
+    {
+    if (!place_meeting(x+velocidad,y,objMuro))&amp;&amp;(!place_meeting(x+velocidad,y,objPuertaPadre))
+    {
+        if (!place_snapped(32,32)) {exit;}
+        speed = 4;
+        direction = 0;
+        //sprite_index = sprExplorerRight;
+        //image_speed = 0.25;
+    }
+    else {
+    if (!place_snapped(32,32)) {exit;}
+    speed=0;}
+    }
+
+//  Movimiento a la izquierda, velocidad 4 en dirección 180.
+if (keyboard_check(vk_left))
+    {
+    if (!place_meeting(x-velocidad,y,objMuro))&amp;&amp;(!place_meeting(x-velocidad,y,objPuertaPadre))
+    {
+        if (!place_snapped(32,32)) {exit;}
+        speed = 4;
+        direction = 180;
+        //sprite_index = sprExplorerLeft;
+        //image_speed = 0.25;
+    }
+    else {
+    if (!place_snapped(32,32)) {exit;}
+    speed=0;}
+    }    
+    
+//  Movimiento arriba, velocidad 4 en dirección 90.
+if (keyboard_check(vk_up))
+    {
+    if (!place_meeting(x,y-velocidad,objMuro))&amp;&amp;(!place_meeting(x,y-velocidad,objPuertaPadre))
+    {
+        if (!place_snapped(32,32)) {exit;}
+        speed = 4;
+        direction = 90;
+        //sprite_index = sprExplorerUp;
+        //image_speed = 0.25;
+    }
+    else {
+    if (!place_snapped(32,32)) {exit;}
+    speed=0;}
+    }    
+
+//  Movimiento abajo, velocidad 4 en dirección 270.
+if (keyboard_check(vk_down))
+    {
+    if (!place_meeting(x,y+velocidad,objMuro))&amp;&amp;(!place_meeting(x,y+velocidad,objPuertaPadre))
+    {
+        if (!place_snapped(32,32)) {exit;}
+        speed = 4;
+        direction = 270;
+        //sprite_index = sprExplorerRight;
+        //image_speed = 0.25;
+    }
+    else {
+    if (!place_snapped(32,32)) {exit;}
+    speed=0;}
+    }    
+
+//  Si no hay tecla precionada debe estar quieto velocidad 0.           
+if (keyboard_check(vk_nokey))
+    {
+    if (!place_snapped(32,32)) {exit;}
+    speed = 0;
+    //image_speed = 0.25;
+    }    
 </string>
           </argument>
         </arguments>
