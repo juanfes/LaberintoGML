@@ -36,6 +36,8 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\backGameover</background>
+    <background>background\backYouwin</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -64,12 +66,15 @@
       <object>objects\objPuertaPadre</object>
     </objects>
     <object>objects\objInicio</object>
+    <object>objects\objFin</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Inicio</room>
-    <room>rooms\Nivel1</room>
     <room>rooms\Nivel2</room>
+    <room>rooms\Nivel1</room>
     <room>rooms\Nivel3</room>
+    <room>rooms\Youwin</room>
+    <room>rooms\Gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
