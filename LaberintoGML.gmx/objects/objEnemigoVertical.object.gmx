@@ -52,7 +52,7 @@
 
 speed = 3;
 
-if (x == objJugador.x &amp;&amp; !place_meeting(x,y,objMuro))
+if (x == objJugador.x )
     {
         if (direction == 90 &amp;&amp; y &gt; objJugador.y)
             {
@@ -65,9 +65,7 @@ if (x == objJugador.x &amp;&amp; !place_meeting(x,y,objMuro))
             speed = 5;
             }
         }    
-    
     }
-    
     
     
 </string>
