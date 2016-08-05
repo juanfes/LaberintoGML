@@ -214,7 +214,6 @@
     <instance objName="objDiamante" x="256" y="384" name="inst_4CAD6822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamante" x="320" y="384" name="inst_91B7394A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamante" x="96" y="320" name="inst_44B7DC7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMeta" x="96" y="32" name="inst_0A9BE40D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemigoVertical" x="416" y="288" name="inst_10D73DB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemigoVertical" x="512" y="288" name="inst_FF582FA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemigoHorizontal" x="480" y="352" name="inst_3F380B53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

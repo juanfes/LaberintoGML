@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 4;
+            <string>vspeed = 3;
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!place_empty(x,y)){vspeed = -vspeed}
+            <string>if (place_meeting(x,y, objMuro)){vspeed = -vspeed; exit;}
+
+speed = 3;
+
+if (x == objJugador.x){
+    if (direction == 90 &amp;&amp; y &gt; objJugador.y){
+        speed = 5;    
+    }
+    else{
+        if (direction == 270 &amp;&amp; y &lt; objJugador.y){
+        speed = 5;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
