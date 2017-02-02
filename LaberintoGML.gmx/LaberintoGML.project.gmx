@@ -33,6 +33,7 @@
       <sprite>sprites\sprPuertaMorada</sprite>
       <sprite>sprites\sprPuertaDorada</sprite>
     </sprites>
+    <sprite>sprites\sprPortal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -70,8 +71,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Inicio</room>
-    <room>rooms\Nivel2</room>
     <room>rooms\Nivel1</room>
+    <room>rooms\Nivel2</room>
     <room>rooms\Nivel3</room>
     <room>rooms\Winner</room>
     <room>rooms\Gameover</room>
