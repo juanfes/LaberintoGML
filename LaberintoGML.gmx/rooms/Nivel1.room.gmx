@@ -222,6 +222,8 @@
     <instance objName="objMeta" x="576" y="416" name="inst_E6451693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemigoArribaAbajo" x="352" y="160" name="inst_A722C4E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemigoArribaAbajo" x="288" y="352" name="inst_C985116D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPortal" x="32" y="96" name="inst_628821DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSalidaPortal" x="576" y="64" name="inst_2E8A9F3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

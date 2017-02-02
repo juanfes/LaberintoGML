@@ -34,6 +34,7 @@
       <sprite>sprites\sprPuertaDorada</sprite>
     </sprites>
     <sprite>sprites\sprPortal</sprite>
+    <sprite>sprites\sprSalidaPortal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -44,6 +45,8 @@
   <objects name="objects">
     <object>objects\objDiamante</object>
     <object>objects\objPuerta</object>
+    <object>objects\objPortal</object>
+    <object>objects\objSalidaPortal</object>
     <object>objects\objMeta</object>
     <object>objects\objEnemigoHorizontal</object>
     <object>objects\objEnemigoVertical</object>

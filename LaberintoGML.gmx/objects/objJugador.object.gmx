@@ -58,7 +58,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>/// Moviento del jugador
 
-/*
+
 if (keyboard_check(vk_left))
     {
     if (!place_meeting(x-velocidad,y,objMuro))&amp;&amp;(!place_meeting(x-velocidad,y,objPuertaPadre))
@@ -82,13 +82,14 @@ if (keyboard_check(vk_down))
     if (!place_meeting(x,y+velocidad,objMuro))&amp;&amp;(!place_meeting(x,y+velocidad,objMuro))
     {y = y+velocidad;}
     }
-*/    
+    
     
 // Snapped moving chapter
 
 //speed = 0;
     
 //  Movimiento a la derecha, velocidad 4 en dirección 0.
+/*
 if (keyboard_check(vk_right))
     {
     if (!place_meeting(x+velocidad,y,objMuro))&amp;&amp;(!place_meeting(x+velocidad,y,objPuertaPadre))
@@ -159,6 +160,8 @@ if (keyboard_check(vk_nokey))
     speed = 0;
     //image_speed = 0.25;
     }    
+    
+    */
 </string>
           </argument>
         </arguments>
@@ -306,6 +309,35 @@ if(llavePlateada)
         }
     }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Portales
+
+if (place_meeting(x,y, objPortal))
+    {
+    with(objPortal){instance_destroy();}
+    audio_play_sound(sndDiamante, 10, false);
+    x = objSalidaPortal.x;
+    y = objSalidaPortal.y;
+    }
 </string>
           </argument>
         </arguments>
