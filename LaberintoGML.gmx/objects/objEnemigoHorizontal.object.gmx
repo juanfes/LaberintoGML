@@ -26,6 +26,34 @@
           <argument>
             <kind>1</kind>
             <string>hspeed = 4;
+alarm[0] = 60;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Ciclo de disparos
+bala = instance_create(x, y, objBalaEnemigo);
+bala.speed = 6;
+bala.direction = direction;
+alarm[0] = 60;
 </string>
           </argument>
         </arguments>
@@ -48,20 +76,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x,y, objMuro)){hspeed = -hspeed; exit;}
+            <string>/// Movimiento y detección
 
-speed = 3;
+// Para que "rebote" cuendo encuentre un muro y no ejecute ninguna otra instrucción
+if (place_meeting(x,y, objMuro)){hspeed = -hspeed; exit;}
+
+// Reacción para cuando el enemigo "vea" al jugador.
+
+speed = 3; // Necesaria para volver la velocidad a la normal si no lo "ve".
 
 if (y == objJugador.y){
-    if (direction == 0 &amp;&amp; x &lt; objJugador.x){
+    // Si esta encarado a la derecha y el jugador a la derecha.
+    if (direction == 0 &amp;&amp; x &lt; objJugador.x){ 
         speed = 5;    
     }
-    else{
-        if (direction == 180 &amp;&amp; x &gt; objJugador.x){
+    // Si esta encarado a la izquierda y el jugador a la izquierda.
+    if (direction == 180 &amp;&amp; x &gt; objJugador.x){ 
         speed = 5;
-        }
     }
 }
+
+
+
+
 </string>
           </argument>
         </arguments>

@@ -35,6 +35,8 @@
     </sprites>
     <sprite>sprites\sprPortal</sprite>
     <sprite>sprites\sprSalidaPortal</sprite>
+    <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\sprBalasEnemigo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -71,11 +73,12 @@
     </objects>
     <object>objects\objInicio</object>
     <object>objects\objFinOver</object>
+    <object>objects\objBalaEnemigo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Inicio</room>
-    <room>rooms\Nivel1</room>
     <room>rooms\Nivel2</room>
+    <room>rooms\Nivel1</room>
     <room>rooms\Nivel3</room>
     <room>rooms\Winner</room>
     <room>rooms\Gameover</room>
